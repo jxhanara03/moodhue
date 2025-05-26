@@ -1,12 +1,7 @@
-# React + Vite
+# MoodHue: A Color Palette Generator Based on Mood & Description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Read My Project Proposal FP1:
+[Click here to read](https://docs.google.com/document/d/1mbgR8WZZNJ36T1__GVI3xSQ6jLz0TQCD69oAd51niak/edit?usp=sharing)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Read FP2:
+[Click here to read](https://docs.google.com/document/d/1J_zTsuO7yScKmAn0E_mPEOwE7y_QjnaVvNwQn8rqN8I/edit?usp=sharing)
