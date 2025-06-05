@@ -27,7 +27,7 @@ MoodHue helps users discover color inspiration based on emotions. It supports cr
    ```bash
    git clone https://github.com/jxhanara03/moodhue.git
    cd moodhue
-````
+   ````
 
 2. **Install Dependencies**
 
