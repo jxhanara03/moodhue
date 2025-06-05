@@ -117,4 +117,4 @@ GET https://www.thecolorapi.com/scheme?hex={hex}&mode={mode}&count=5
 
 ---
 
-## 👩‍🎨 Made with 🩷 by \[Hanara Nam]
+## 👩‍🎨 Made with 🩷 by Hanara Nam
