@@ -34,7 +34,6 @@ export default function SavedPalettes() {
           id: docSnap.id,
           colors: docSnap.data().colors?.slice(0, 5) || [],
         }));
-
         setSavedPalettes(palettes);
         setLoading(false);
       },
@@ -53,9 +52,7 @@ export default function SavedPalettes() {
     const paletteRef = doc(db, 'users', user.uid, 'palettes', palette.id);
 
     try {
-      await setDoc(paletteRef, {
-        colors: palette.colors,
-      });
+      await setDoc(paletteRef, { colors: palette.colors });
     } catch (error) {
       console.error('Error saving palette:', error);
     }
@@ -91,7 +88,7 @@ export default function SavedPalettes() {
       <div className="flex flex-1 items-center justify-center">
         <div className="flex flex-col items-center">
           <h2 className="text-3xl font-bold mb-6 text-yellow-700">
-            Your Saved Palettes
+            Your MoodHue Palettes
           </h2>
 
           {loading ? (
@@ -114,10 +111,7 @@ export default function SavedPalettes() {
                       }
                       title={isPaletteSaved(palette.id) ? 'Unsave' : 'Save'}
                       className="focus:outline-none border-none"
-                      style={{
-                        background: 'transparent',
-                        padding: 0,
-                      }}
+                      style={{ background: 'transparent', padding: 0 }}
                     >
                       <i
                         className={`bi ${
@@ -140,7 +134,7 @@ export default function SavedPalettes() {
                     Palette {index + 1}
                   </h3>
 
-                  <div className="grid grid-cols-5 gap-2 mb-6">
+                  <div className="grid grid-cols-5 gap-2 mb-2">
                     {palette.colors.map((hex, i) => (
                       <div
                         key={i}
@@ -148,6 +142,14 @@ export default function SavedPalettes() {
                         style={{ backgroundColor: hex }}
                         title={hex}
                       />
+                    ))}
+                  </div>
+
+                  <div className="flex justify-center space-x-2 mb-4 text-sm text-gray-600">
+                    {palette.colors.map((hex, i) => (
+                      <span key={i} className="font-mono">
+                        {hex.toUpperCase()}
+                      </span>
                     ))}
                   </div>
                 </div>

@@ -8,7 +8,7 @@ export default function MoodForm({ onGenerate, onTyping }) {
     if (!description.trim()) return;
 
     onGenerate(description);
-    setDescription(''); // clear input after submission
+    setDescription(''); 
   };
 
   return (
